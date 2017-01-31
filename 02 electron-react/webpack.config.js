@@ -2,19 +2,19 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  context: path.join(__dirname, 'src'),
+  context: path.join(__dirname, 'app'),
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    // 'react-hot-loader/patch',
+     //'react-hot-loader/patch',
     // 'webpack-hot-middleware/client',
     './js/index.js'
   ],
   devServer: {
-   contentBase: path.join(__dirname, 'src'),
+   contentBase: path.join(__dirname, 'app'),
    inline: true
   },
   output: {
-    path: path.join(__dirname, 'src'),
+    path: path.join(__dirname, 'app'),
     filename: './bundle.js'
   },
   plugins: [

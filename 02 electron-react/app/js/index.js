@@ -1,5 +1,11 @@
 import React, {Component} from 'react';
 import ReactDom from 'react-dom';
+import { Router, hashHistory } from 'react-router'
+import routes from './routes.js'
 
 
-ReactDom.render('<h1>Hello World</h1>', document.getElementById("root"));
+
+ReactDom.render(
+    <Router routes={routes} history={hashHistory}/>, 
+    document.getElementById("root")
+);
