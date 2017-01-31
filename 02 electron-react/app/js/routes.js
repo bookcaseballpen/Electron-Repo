@@ -1,11 +1,13 @@
 import React from 'react';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
+import { Route, IndexRoute } from 'react-router'
 
 import App from './containers/App';
 import HomePage from './containers/HomePage';
+import CounterPage from './containers/CounterPage';
 
 module.exports = (
     <Route path="/" component={App}>
      <IndexRoute component={HomePage} />
+     <Route path="/counter" component={CounterPage} />
     </Route>
 )

@@ -1,14 +1,11 @@
 import React, {Component} from 'react'
 
-export default class ConterPage extends Component {
-    props: {
-        children: HTMLELEMENT
-    };
+export default class CounterPage extends Component {
 
     render() {
         return(
             <div>
-                {this.props.children}
+                <h1>CounterPage</h1>
             </div>
         )
     }

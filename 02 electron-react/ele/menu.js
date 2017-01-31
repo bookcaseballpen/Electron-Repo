@@ -1,4 +1,4 @@
-import {mainWindow} from './main.js';
+import {mainWindow} from './window';
 
 export const MenuTemplate = [
     {
@@ -24,5 +24,14 @@ export const MenuTemplate = [
                 click() {mainWindow.loadURL('http://google.com')}
             }
         ]
+    },
+    {
+        label: 'Tools', //for dev only
+        submenu: [
+            {
+                role: 'toggledevtools'
+            },
+        ]
     }
+
 ]

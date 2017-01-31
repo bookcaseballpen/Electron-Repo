@@ -1,6 +1,6 @@
 import { app, Menu } from 'electron';
-import { MenuTemplate } from './menu.js'; // import const
-import { mainWindow, createWindow } from './main.js';
+import { MenuTemplate } from './menu'; // import const
+import { mainWindow, createWindow } from './window';
 
 app.on('ready', () => {
     createWindow();
