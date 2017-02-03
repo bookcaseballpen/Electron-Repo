@@ -3,9 +3,14 @@ import { MenuTemplate } from './menu'; // import const
 import { mainWindow, createWindow } from './window';
 
 app.on('ready', () => {
-    createWindow();
+  //init application
+  createWindow();
 	const menu = Menu.buildFromTemplate(MenuTemplate);
 	Menu.setApplicationMenu(menu);
+
+  mainWindow.webContents.on('did-finish-load', ()=> {
+    mainWindow.webContents.send('ping', 'woohaha')
+  });
 });
 
 app.on('window-all-closed', function () {

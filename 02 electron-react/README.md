@@ -2,7 +2,11 @@
 This repo is use to test combine react with electron to produce a web-tech
 based multiple platform application.
 
-## Folder structure
+## Electron Structure
+- main process
+- render process
+
+## Folder Structure
 -app to keep application
   |-js 
     |-actions :to keep app functionalities
